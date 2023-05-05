@@ -1,0 +1,96 @@
+nav {
+    text-transform: uppercase;
+    text-decoration: none;
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #14273a;
+    height: 65px;
+    transition: all 0.5s;
+    z-index: 1000;
+}
+
+.menuicon {
+    display: none;
+}
+
+.logo {
+    font-size: 21px;
+    font-weight: 600;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    user-select: none;
+}
+
+.ulhide, .uldisplay {
+    list-style-type: none;
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    transition: all 0.5s;
+}
+
+.link {
+    font-family: 'Baloo Tammudu 2', cursive;
+    color: white;
+    font-size: 20px;
+}
+
+.link:hover {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+.textselectno {
+    user-select: none;
+}
+
+.textselectno:hover, .textselectno:focus {
+    text-decoration: none;
+}
+
+@media (max-width: 988px) {
+
+    nav {
+        padding-top: 1em;
+        height: 50px;
+    }
+
+    .logo {
+        align-self: flex-start;
+    }
+
+    .uldisplay {
+        flex-direction: column;
+        position: fixed;
+        padding-top: 10px;
+        padding-left: 0;
+        top: 50px;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .ulhide {
+        flex-direction: column;
+        position: fixed;
+        padding-top: 10px;
+        padding-left: 0;
+        top: -100%;
+        transition: all 0.5s ease-in-out;
+    }
+
+    nav ul li {
+        padding: 10px 20px;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .menuicon {
+        display: block;
+        align-self: flex-start;
+    }
+
+}
